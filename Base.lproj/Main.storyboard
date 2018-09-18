@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VZd-Qm-5vz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="VKf-4u-rI9">
+            <objects>
+                <viewController id="VZd-Qm-5vz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HbL-kn-iAG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuZ-DE-cSf">
+                                <rect key="frame" x="150" y="320" width="75" height="47"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="show" id="wGr-mj-nD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="EuZ-DE-cSf" firstAttribute="top" secondItem="sZq-vG-aDe" secondAttribute="top" constant="300" id="Ild-z3-vie"/>
+                            <constraint firstItem="sZq-vG-aDe" firstAttribute="bottom" secondItem="EuZ-DE-cSf" secondAttribute="bottom" constant="300" id="eOg-a8-PgM"/>
+                            <constraint firstItem="EuZ-DE-cSf" firstAttribute="leading" secondItem="sZq-vG-aDe" secondAttribute="leading" constant="150" id="eXR-yf-uQg"/>
+                            <constraint firstItem="sZq-vG-aDe" firstAttribute="trailing" secondItem="EuZ-DE-cSf" secondAttribute="trailing" constant="150" id="fLs-xa-265"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sZq-vG-aDe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="boL-6z-rfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617" y="117"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="ShootingGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
